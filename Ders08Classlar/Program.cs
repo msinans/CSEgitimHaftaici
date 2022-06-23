@@ -40,7 +40,7 @@ namespace Ders08Classlar // Note: actual namespace depends on the project name.
              
             };
 
-            Console.WriteLine("Kurs Bilgilerim : \n Kurs Adı {0} Eğitim Adı : {1} Kapı No : {2}", kurs.KursAdi, kurs.EgitimAdi, kurs.KapiNo);
+            Console.WriteLine("Kurs Bilgilerim : \nKurs Adı : {0} Eğitim Adı : {1} Kapı No : {2}", kurs.KursAdi, kurs.EgitimAdi, kurs.KapiNo);
 
             Araba araba = new()
             {
@@ -56,7 +56,7 @@ namespace Ders08Classlar // Note: actual namespace depends on the project name.
             {
                 Fiyat = 99,
                 Ozellikler = "Işıklı Klavye",
-                Stok = 10,
+                Stok = 18,
                 UrunAdi = "Oyuncu Klavye"
             };
             Console.WriteLine("Ürün Bilgileri");
@@ -64,7 +64,17 @@ namespace Ders08Classlar // Note: actual namespace depends on the project name.
             Console.WriteLine($"Ürün Fiyatı : {urun.Fiyat}");
             Console.WriteLine($"Ürün Stok : {urun.Stok}");
             Console.WriteLine($"Ürün Özellikler : {urun.Ozellikler}");
-        }
+
+            Console.WriteLine();
+            Console.WriteLine("Sınıfta Metot Kullanımı");
+            SiniftaMetotKullanimi siniftaMetotKullanimi = new();
+            siniftaMetotKullanimi.ToplamaYap();
+            //Console.WriteLine(siniftaMetotKullanimi.mesaj);
+            // Static olarak belirtilmeyen metot ve değişkenler dinamiktir
+            // Sınıfların içindeki dinamik metot ve değişkenlere ulaşmak için yukarıdaki gibi new leyerek nesne oluşturmamız gerekir 
+            SiniftaMetotKullanimi.StatikToplamaYap(18,18); // statik metoda doğrudan class adı.metot adı şeklinde erişebiliriz, nesneye(siniftaMetotKullanimi) ihtiyacımız yok!
+            Console.WriteLine(SiniftaMetotKullanimi.StatikDegisken);
+         }
     }
 }
 
