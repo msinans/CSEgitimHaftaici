@@ -37,7 +37,7 @@ namespace Ders08Classlar // Note: actual namespace depends on the project name.
                 EgitimAdi = "Yazılım Uzmanlığı",
                 KapiNo = 102,
                 SinifMevcudu = 6
-             
+
             };
 
             Console.WriteLine("Kurs Bilgilerim : \nKurs Adı : {0} Eğitim Adı : {1} Kapı No : {2}", kurs.KursAdi, kurs.EgitimAdi, kurs.KapiNo);
@@ -50,7 +50,7 @@ namespace Ders08Classlar // Note: actual namespace depends on the project name.
                 Renk = "Beyaz",
                 UretimYili = 2013
             };
-            Console.WriteLine($"Araba Bilgileriniz :\nMarka : {araba.Marka} \nModel : {araba.Model}\nRenk : {araba.Renk}" );
+            Console.WriteLine($"Araba Bilgileriniz :\nMarka : {araba.Marka} \nModel : {araba.Model}\nRenk : {araba.Renk}");
 
             Urun urun = new()
             {
@@ -60,7 +60,7 @@ namespace Ders08Classlar // Note: actual namespace depends on the project name.
                 UrunAdi = "Oyuncu Klavye"
             };
             Console.WriteLine("Ürün Bilgileri");
-            Console.WriteLine($"Ürün Adı : {urun.UrunAdi }");
+            Console.WriteLine($"Ürün Adı : {urun.UrunAdi}");
             Console.WriteLine($"Ürün Fiyatı : {urun.Fiyat}");
             Console.WriteLine($"Ürün Stok : {urun.Stok}");
             Console.WriteLine($"Ürün Özellikler : {urun.Ozellikler}");
@@ -72,9 +72,9 @@ namespace Ders08Classlar // Note: actual namespace depends on the project name.
             //Console.WriteLine(siniftaMetotKullanimi.mesaj);
             // Static olarak belirtilmeyen metot ve değişkenler dinamiktir
             // Sınıfların içindeki dinamik metot ve değişkenlere ulaşmak için yukarıdaki gibi new leyerek nesne oluşturmamız gerekir 
-            SiniftaMetotKullanimi.StatikToplamaYap(18,18); // statik metoda doğrudan class adı.metot adı şeklinde erişebiliriz, nesneye(siniftaMetotKullanimi) ihtiyacımız yok!
+            SiniftaMetotKullanimi.StatikToplamaYap(18, 18); // statik metoda doğrudan class adı.metot adı şeklinde erişebiliriz, nesneye(siniftaMetotKullanimi) ihtiyacımız yok!
             Console.WriteLine(SiniftaMetotKullanimi.StatikDegisken);
-         }
+        }
     }
 }
 

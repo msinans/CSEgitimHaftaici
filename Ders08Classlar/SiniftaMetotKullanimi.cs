@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ders08Classlar
 {
-    internal class SiniftaMetotKullanimi
+    public class SiniftaMetotKullanimi
     {
         public string mesaj = "";
         public SiniftaMetotKullanimi() // klavyeden ctor yazıp iki kere taba tasarak oluşturduk
