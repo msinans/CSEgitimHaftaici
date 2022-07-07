@@ -31,9 +31,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders13Enumlar", "Ders13Enum
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders14KalitimInheritance", "Ders14KalitimInheritance\Ders14KalitimInheritance.csproj", "{A421DD5D-0AFD-48BA-BDD7-1E965E7E80C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders15Kapsülleme-Encapsulation", "Ders15Kapsülleme\Ders15Kapsülleme-Encapsulation.csproj", "{654AE93B-20F9-4973-AF25-C79878949559}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders15Kapsülleme-Encapsulation", "Ders15Kapsülleme\Ders15Kapsülleme-Encapsulation.csproj", "{654AE93B-20F9-4973-AF25-C79878949559}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders16InterfacesArayuzler", "Ders16InterfacesArayuzler\Ders16InterfacesArayuzler.csproj", "{68CE3BE4-952B-4C90-AE7D-59337EE6C423}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders16InterfacesArayuzler", "Ders16InterfacesArayuzler\Ders16InterfacesArayuzler.csproj", "{68CE3BE4-952B-4C90-AE7D-59337EE6C423}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders17AbstractClasses", "Ders17AbstractClasses\Ders17AbstractClasses.csproj", "{669E70E7-1601-4C29-AC6D-BD9E6CDDF3B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{68CE3BE4-952B-4C90-AE7D-59337EE6C423}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68CE3BE4-952B-4C90-AE7D-59337EE6C423}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68CE3BE4-952B-4C90-AE7D-59337EE6C423}.Release|Any CPU.Build.0 = Release|Any CPU
+		{669E70E7-1601-4C29-AC6D-BD9E6CDDF3B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{669E70E7-1601-4C29-AC6D-BD9E6CDDF3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{669E70E7-1601-4C29-AC6D-BD9E6CDDF3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{669E70E7-1601-4C29-AC6D-BD9E6CDDF3B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
