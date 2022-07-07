@@ -1,0 +1,112 @@
+﻿using System.Collections;
+using System.Collections.Specialized;
+
+namespace Ders18CollectionsKoleksiyonlar
+{
+    internal class Program
+    {
+        public static string? Çankırı { get; private set; }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Collections - Koleksiyonlar!");
+            // ArrayListKoleksiyon(); // soldakini buraya yazmazsak aşağıdakiler çalışmaz
+            //StringKoleksiyonu();
+            //StringDictionaryKoleksiyonu();
+            StringListKullanimi();
+        }
+        static void ArrayListKoleksiyon()
+            
+        {
+            //Koleksiyonlar farklı veri tiplerinden değerler atama
+            int tamsayi = 10;
+            double dabil = 18.8;
+            ArrayList koleksiyon = new(); // Array = Dizi, Arraylist = Dizi Listesi
+            koleksiyon.Add("Başkent Ankara");
+            koleksiyon.Add(tamsayi);
+            koleksiyon.Add(dabil);
+            for (int index = 0; index < koleksiyon.Count; index++)
+            {
+                Console.WriteLine(koleksiyon[index]);
+            }    
+            foreach (var item in koleksiyon)
+            {
+                Console.WriteLine("Koleksiyondaki Değer : " + item );
+            }
+        }
+        static void StringKoleksiyonu()
+       
+
+        {
+
+            StringCollection strlist = new(); // string içeriklerden oluşacak koleksiyonlara özel StringCollection sınıfını kullanabiliriz
+
+            strlist.Add("Çankırı");
+            strlist.Add("Ankara");
+            strlist.Add("İstanbul");
+            foreach (var item in strlist)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        private static void StringDictionaryKoleksiyonu()
+        static void DictionaryKoleksiyonu()
+
+
+        {
+            StringDictionary liste = new StringDictionary(); // string içeriklerden oluşacak koleksiyonlara özel String Dictionary sınıfını kullanabiliriz böylece verilere key ve value değerleri atanabilir
+            liste.Add("18", "Çankırı");
+            liste.Add("06", "Ankara");
+            liste.Add("34", "İstanbul");
+            liste.Add("58", "Sivas");
+
+            Console.WriteLine(liste["06"]);
+
+            foreach (var item in liste.Keys)
+            {
+                Console.WriteLine(item);
+            }
+            foreach (var item in liste.Values)
+            {
+                Console.WriteLine(item);
+            }
+        }
+        static void StringListKullanimi()
+        {
+            List<string> sehirler = new(); //veri tipi string olan şehirler isminde liste oluşturduk
+            sehirler.Add("Ankara");
+            sehirler.Add("İstanbul");
+            sehirler.Add("Çankırı");
+
+            foreach (var item in sehirler)
+            {
+                Console.WriteLine(item);
+            }
+            List<User> users = new();
+
+            users.Add(new User
+            {
+                Id =1,
+                Ad = "Taha", 
+                Soyad = "Yılmaz"
+            });
+
+            users.Add(new User
+            {
+                Id = 2,
+                Ad = "Murat",
+                Soyad = "Yılmaz"
+            });
+            foreach (var item in users)
+            {
+                Console.WriteLine(item.Ad + " " + item.Soyad);
+            }
+            List<User> kullanicilar = new()
+            {
+                new User(Id = 1, Ad = "Yunus", Soyad = "Kiraz" ),
+                new User(Id = 2, Ad = "Muhammed", Soyad = "Musab" )
+            };
+        }
+    }
+}
