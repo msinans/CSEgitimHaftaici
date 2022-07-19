@@ -4,13 +4,12 @@ using System.Collections.Specialized;
 namespace Ders18CollectionsKoleksiyonlar
 {
     internal class Program
-    {
-        public static string? Çankırı { get; private set; }
-
+    {        
         static void Main(string[] args)
         {
             Console.WriteLine("Collections - Koleksiyonlar!");
-            // ArrayListKoleksiyon(); // soldakini buraya yazmazsak aşağıdakiler çalışmaz
+
+            //ArrayListKoleksiyon(); // soldakini buraya yazmazsak aşağıdakiler çalışmaz
             //StringKoleksiyonu();
             //StringDictionaryKoleksiyonu();
             StringListKullanimi();
@@ -36,9 +35,7 @@ namespace Ders18CollectionsKoleksiyonlar
         }
         static void StringKoleksiyonu()
        
-
         {
-
             StringCollection strlist = new(); // string içeriklerden oluşacak koleksiyonlara özel StringCollection sınıfını kullanabiliriz
 
             strlist.Add("Çankırı");
@@ -50,12 +47,9 @@ namespace Ders18CollectionsKoleksiyonlar
             }
         }
 
-        private static void StringDictionaryKoleksiyonu()
-        static void DictionaryKoleksiyonu()
-
-
-        {
-            StringDictionary liste = new StringDictionary(); // string içeriklerden oluşacak koleksiyonlara özel String Dictionary sınıfını kullanabiliriz böylece verilere key ve value değerleri atanabilir
+        static void StringDictionaryKoleksiyonu()
+         {
+            StringDictionary liste = new(); // string içeriklerden oluşacak koleksiyonlara özel String Dictionary sınıfını kullanabiliriz böylece verilere key ve value değerleri atanabilir
             liste.Add("18", "Çankırı");
             liste.Add("06", "Ankara");
             liste.Add("34", "İstanbul");
@@ -71,6 +65,32 @@ namespace Ders18CollectionsKoleksiyonlar
             {
                 Console.WriteLine(item);
             }
+        }
+        static void DictionaryKoleksiyonu()
+        {
+            Dictionary<string, string> dictionary = new();
+            dictionary.Add("book", "kitap");
+            dictionary.Add("table", "masa");
+            dictionary.Add("computer", "bilgisayar");
+
+            Console.WriteLine(dictionary["table"]);
+
+            foreach (var item in dictionary)
+            {
+                Console.WriteLine(item.Value);
+            }
+
+            Dictionary<int, string> liste = new();
+            liste.Add(18, "Çankırı");
+            liste.Add(58, "Sivas");
+            liste.Add(34, "İstanbul");
+
+            string kelime = "İstanbul";
+            foreach (var item in liste)
+            {
+                Console.WriteLine(item.Value);
+            }
+
         }
         static void StringListKullanimi()
         {

@@ -1,7 +1,7 @@
 ﻿//using System; // Burası açıklama satırıdır ve sistem tarafından kod olarak görülmez
 //Yukarıdaki using System; alanı aşağıda sistem kütüphanesi içindeki yapıları kullanabilmemizi sağlar.
 
-using System;
+
 
 namespace Ders01Degiskenler // namespace alanı genellikle proje ile aynı isimde olur ve bu projenin başka projelerde referans olarak kullanılabilmesini sağlar
 {
