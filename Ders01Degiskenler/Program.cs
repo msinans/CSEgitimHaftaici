@@ -1,4 +1,4 @@
-﻿//using System; // Burası açıklama satırıdır ve sistem tarafından kod olarak görülmez
+﻿using System; // Burası açıklama satırıdır ve sistem tarafından kod olarak görülmez
 //Yukarıdaki using System; alanı aşağıda sistem kütüphanesi içindeki yapıları kullanabilmemizi sağlar.
 
 
