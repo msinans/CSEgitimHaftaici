@@ -1,4 +1,10 @@
-﻿namespace Ders18CollectionsKoleksiyonlar
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ders18CollectionsKoleksiyonlar
 {
     internal class ArrayListKoleksiyon
     {

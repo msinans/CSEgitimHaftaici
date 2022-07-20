@@ -124,8 +124,9 @@ namespace Ders18CollectionsKoleksiyonlar
             }
             List<User> kullanicilar = new()
             {
-                new User(Id = 1, Ad = "Yunus", Soyad = "Kiraz" ),
-                new User(Id = 2, Ad = "Muhammed", Soyad = "Musab" )
+                new User{Id = 1, Ad = "Yunus", Soyad = "Kiraz" },
+                new User{Id = 2, Ad = "Muhammed", Soyad = "Musab" }
+               
             };
         }
     }
