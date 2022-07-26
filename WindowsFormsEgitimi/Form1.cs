@@ -19,7 +19,7 @@ namespace WindowsFormsEgitimi
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Burası form yüklenirken devreye girerf
+            //Burası form yüklenirken devreye girer
         }
 
         private void button2_Click(object sender, EventArgs e)

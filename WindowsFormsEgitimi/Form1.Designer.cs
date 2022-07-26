@@ -42,10 +42,10 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -95,7 +95,7 @@
             "Aksesuar"});
             this.checkedListBox1.Location = new System.Drawing.Point(330, 13);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox1.Size = new System.Drawing.Size(120, 79);
             this.checkedListBox1.TabIndex = 2;
             // 
             // comboBox1
@@ -167,10 +167,17 @@
             this.groupBox1.Controls.Add(this.domainUpDown1);
             this.groupBox1.Location = new System.Drawing.Point(25, 97);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.Size = new System.Drawing.Size(174, 100);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(6, 62);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.TabIndex = 11;
             // 
             // label1
             // 
@@ -190,9 +197,9 @@
             "Yazılım",
             "Telefon",
             "Aksesuar"});
-            this.listBox1.Location = new System.Drawing.Point(330, 116);
+            this.listBox1.Location = new System.Drawing.Point(330, 98);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 95);
+            this.listBox1.Size = new System.Drawing.Size(120, 69);
             this.listBox1.TabIndex = 9;
             // 
             // monthCalendar1
@@ -200,13 +207,6 @@
             this.monthCalendar1.Location = new System.Drawing.Point(552, 67);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 10;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(6, 62);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 11;
             // 
             // pictureBox1
             // 
@@ -276,12 +276,14 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(552, 318);
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button2.ForeColor = System.Drawing.Color.Red;
+            this.button2.Location = new System.Drawing.Point(552, 296);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 33);
             this.button2.TabIndex = 16;
             this.button2.Text = "Form2\' yi aç";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
