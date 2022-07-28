@@ -16,7 +16,7 @@ namespace WindowsFormsEgitimi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form7()); // uygulama çalışınca açılacak form
+            Application.Run(new Form9()); // uygulama çalışınca açılacak form
         }
     }
 }
